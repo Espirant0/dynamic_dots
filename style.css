@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    display: grid;
+    place-items: center;
+}
+
+html, body{
+    height: 100%;
+}
+.title{
+    font-size: 80px;
+    font-family: Verdana, sans-serif;
+    font-weight: 400px;
+}
+
+.pager{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pager button{
+    flex: 0 0 42px;
+    height: 42px;
+    border: 0;
+    padding: 6px;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.pager button span{
+    display: block;
+    height: 30px;
+    width: 100%;
+    border-radius: 15px;
+    background: #000;
+    transition: 0.4s;
+}
+
+.pager button:focus{
+    flex: 0 0 80px;
+}
+
+.pager button:focus span{
+    background: #0000FF;
+}
